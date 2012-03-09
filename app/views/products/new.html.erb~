@@ -1,0 +1,9 @@
+<%= form_tag('/products', :method=>'post') do %>
+<%= text_field_tag 'name' %>
+<%= select_tag "product_id", options_from_collection_for_select(@products, "id", "name"), :include_blank => true %>
+<div id="subproduct">
+  <%= render :partial => 'subproduct' %>
+</div>
+<%= submit_tag 'Save' %>
+<% end -%>
+<%= link_to "Back", :controller => "products", :action => "index" %>

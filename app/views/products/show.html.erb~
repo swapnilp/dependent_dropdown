@@ -1,0 +1,9 @@
+<h1>Enter the product or sub product</h1>
+<%= form_tag('/products/find') do %>
+ <%= text_field_tag :product1 %>
+  <%= submit_tag "Search" %>
+<% end %>
+<div>
+  <%= render 'form' %>
+</div>
+

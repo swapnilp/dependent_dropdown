@@ -1,0 +1,11 @@
+class Product < ActiveRecord::Base
+  #accociation
+  has_many :subproducts
+  
+  #validation
+  validates :product, :presence => true
+  validates_associated :subproducts
+
+  #callback
+ 
+end

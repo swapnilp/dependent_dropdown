@@ -1,0 +1,2 @@
+class Subsubproduct < ActiveRecord::Base
+end

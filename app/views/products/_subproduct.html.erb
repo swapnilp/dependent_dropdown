@@ -1,0 +1,7 @@
+  <% if !subproduct.blank? %>
+    <%= "subcategory" %>
+    <%= select_tag :subproduct_id, options_from_collection_for_select(subproduct, "id", "name"), :include_blank => true %>
+  <% else %>
+    <%= "subcategory" %>
+    <%= select_tag :subproduct_id, :include_blank => true %>
+  <% end %>

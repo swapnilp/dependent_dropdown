@@ -1,0 +1,17 @@
+Requirements
+   *rvm  
+   *Ruby
+   *Rails 3.1
+   *Mysql
+
+Implementation Stapes
+   1) git clone
+   2) cd dependent_dropdown  #open the directory
+   3) change mysql password in config/database.yml  # mysql password
+   4) rake db:create         # creation of database
+   5) rake db:migrate        # execute the migration
+   6) bundle install         # for downloading gem files
+   6) rails s                # for running server
+   7) open browser and put url "http://0.0.0.0:3000"
+
+   

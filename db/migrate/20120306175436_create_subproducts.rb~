@@ -1,0 +1,9 @@
+class CreateSubproducts < ActiveRecord::Migration
+  def change
+    create_table :subproducts do |t|
+      t.references :product, :null => false
+      t.string :name, :null => false
+      t.timestamps
+    end
+  end
+end
